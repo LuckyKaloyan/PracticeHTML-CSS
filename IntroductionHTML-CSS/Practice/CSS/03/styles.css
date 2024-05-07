@@ -27,7 +27,7 @@ li+li+li{
     color:red;
     font-style: italic;
 }
-input{
+input.specificClass{
     size: 15px;
 margin: 2px;
 border: solid 2px green;
