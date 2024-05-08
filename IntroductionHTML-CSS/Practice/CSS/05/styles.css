@@ -8,9 +8,6 @@ p{
 section > p:first-of-type {
     padding-top: 35px;
 }
-.highlighted{
-    
-}
 
 .highlighted + p{
     padding-top: 0px;
