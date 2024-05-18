@@ -2,6 +2,7 @@ body{
     font-size:  16px;
     font-family: Helvetica, sans-serif;
     line-height: 1.5;
+    padding: 30px;
 }
 
 
@@ -29,12 +30,34 @@ h1,h2,h3,h4,h5,h6{
     font-family: Georgia, serif ;
 }
 
-td{
-    border: 1px;
-}
 table{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-collapse: collapse;
 }
-th, td {
+td {
+    padding: 5px;
     border: 1px solid #000;
+}
+
+th{
+    font-weight: bold;
+    background-color: grey;
+}
+
+blockquote{
+    border-left: solid 5px rgb(221,221,221) ;
+    padding-left: 20px;
+    font-style: italic;
+}
+blockquote footer{
+    text-align: right;
+}
+
+ul>li{
+    list-style-type: disc;
+}
+.surrender{
+    list-style: circle;
 }
