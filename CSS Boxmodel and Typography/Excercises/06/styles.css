@@ -1,0 +1,25 @@
+.accordion {
+    border: 1px solid #ccc;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+.accordion-header {
+    background-color: #f4f4f4;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+/* Hide checkbox inputs */
+.accordion input[type="checkbox"] {
+    display: none;
+}
+
+/* Show content when checkbox is checked */
+.accordion input[type="checkbox"]:checked ~ .accordion-content {
+    display: block;
+}
