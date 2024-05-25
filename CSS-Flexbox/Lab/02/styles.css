@@ -1,0 +1,33 @@
+div {
+    width: 400px;
+    padding: 1em;
+    border: solid 2px blue;
+    display: flex;
+    padding-right: 80%;
+    overflow: hidden;
+    
+}
+div > div {
+    background-color: #eee;
+    padding: 20px;
+    border: solid 2px #000;
+}
+*{
+    box-sizing: border-box;
+}
+
+.flex-default{
+flex-direction: default;
+}
+.flex-reverse{
+    flex-direction: row-reverse;
+    padding-left: 81%;
+    padding-right: 0px;
+   
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-column-reverse{
+    flex-direction: column-reverse;
+}
