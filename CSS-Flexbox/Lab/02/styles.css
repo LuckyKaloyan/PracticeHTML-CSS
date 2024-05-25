@@ -19,11 +19,12 @@ div > div {
 .flex-default{
 flex-direction: default;
 }
-.flex-reverse{
+.flex-reverse {
     flex-direction: row-reverse;
-    padding-left: 81%;
-    padding-right: 0px;
-   
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-right: 9%;
+    padding-left: 72%;
 }
 .flex-column{
     flex-direction: column;
