@@ -12,15 +12,14 @@ nav {
     border-radius: 1.5%;
 }
 div{     
-         margin: 1rem;
-         padding: 0.1rem;
-         background-color: lightgray;
+    margin: 1rem;
+    padding: 0.1rem;
+    background-color: lightgray;
          
-         border: solid 0.5px black;
-         border-radius: 1.5%;
-         box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.5);
-        }        
-
+    border: solid 0.5px black;
+    border-radius: 1.5%;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.5);
+    }        
 
 
 
@@ -54,7 +53,7 @@ li:hover {
 
 nav > ul > li > ul {
     position: absolute;
-    top: calc(100%); /* Adjusted top position */
+    top: calc(100%); 
     left: 0;
     background: white;
     visibility: hidden;

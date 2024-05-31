@@ -28,6 +28,7 @@ body {
 .sided-section {
     width: 20%;
     min-height: 100%;
+    border-left: solid 2px lightgray;
 }
 
 .main-section, .sided-section{
@@ -83,8 +84,6 @@ body {
 .dates{
     border-top: none;
     height: 98.5%;
-}
-.items .corner{
 }
 
 .top{
