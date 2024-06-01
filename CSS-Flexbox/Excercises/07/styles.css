@@ -1,13 +1,18 @@
-/* Resetting default styles */
-*,
-*::before,
-*::after {
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
+}
+
+html {
     box-sizing: border-box;
 }
 
-/* Setting base font and spacing */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 html {
     font: 14px/1.5 Lato, sans-serif;
 }
@@ -20,17 +25,21 @@ body {
     padding: 2em;
 }
 
-/* Styles for the tree structure */
+h1 {
+    margin-bottom: 1em;
+}
+
 .tree {
     --border-size: 4px;
     --border-color: #DDD;
     --spacing-line-vertical: 0.2em;
+    --radius: 8px;
 }
 
 .tree li, .tree summary {
-    display: flex;
-    align-items: center;
     line-height: 1.2;
+    display: flex;
+    flex: 1 1 auto;
 }
 
 .tree li {
@@ -38,11 +47,14 @@ body {
 }
 
 .tree ul {
+    padding-top: var(--spacing-line-vertical);
     padding-left: 0;
 }
 
 .tree ul li {
     border-left: var(--border-size) solid var(--border-color);
+    display: flex;
+    align-items: center;
     margin-left: 0.25em;
 }
 
@@ -52,12 +64,17 @@ body {
 
 .tree ul li:before {
     content: "";
+    order: -2;
     display: block;
+    align-self: flex-start;
+    flex: 0 0 1.4em;
     width: 1.4em;
     height: 1.1em;
     border: solid var(--border-color);
     border-width: 0 0 var(--border-size) var(--border-size);
-    margin-left: calc(var(--border-size) * -0.91);
+    position: relative;
+    top: -0.5em;
+    left: calc( var(--border-size) * -0.91 );
 }
 
 .tree ul li:last-child:before {
@@ -65,7 +82,17 @@ body {
 }
 
 .tree summary {
+    display: flex;
     cursor: pointer;
+    align-items: center;
+}
+
+.tree summary::marker {
+    display: none;
+}
+
+.tree summary:focus {
+    outline: none;
 }
 
 .tree summary:focus-visible {
@@ -73,12 +100,16 @@ body {
 }
 
 .tree summary::before {
-    content: "+";
+    content: "";
     display: flex;
     align-items: center;
     justify-content: center;
+    order: -1;
+    flex: 0 0 1.4em;
     width: 1.4em;
     height: 1.4em;
+    font-size: 1rem;
+    line-height: 1;
     border-radius: 50%;
     background: #ddd;
     margin-right: 0.4em;
@@ -86,12 +117,19 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     margin-left: -0.3em;
+}
+
+.tree summary::before {
+    content: "+";
     background-color: rgb(38, 129, 38);
+    z-index: 1;
     color: #fff;
+    line-height: calc(2 * var(--radius) - 2px);
+    text-align: center;
 }
 
 .tree details {
-    flex: 1;
+    flex: 1 1 auto;
 }
 
 .tree details[open] > summary::before {

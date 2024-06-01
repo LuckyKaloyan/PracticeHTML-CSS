@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.field{
+    margin: 4rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 47rem;
+    border: solid 1px black;
+    height: 16rem;
+}
+
+.row12{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 30%;
+    width: 100%;
+}
+
+.row1element{
+    padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+    margin: 0.3rem;
+    border: black solid 1px;
+}
+
+.row2element{
+   
+    padding: 0.45rem 0.92rem 0.45rem 0.92rem;
+    margin: 0.3rem;
+    border: black solid 1px;
+}
+
+.row2element .backspace{
+   
+    padding: 0 0.rem 0 0.rem;
+}
+
+.row34{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0.6rem 0rem 0.6rem 0rem;
+    height: 30%;
+    width: 100%;
+}
+
+.row3element{
+    padding: 0.45rem 0.92rem 0.45rem 0.92rem;
+    margin: 0.3rem;
+    border: black solid 1px;
+}
+
+.row3elementEnter{
+   padding: 0.45rem 0.92rem 0.45rem 0.92rem;
+   margin: 0.3rem;
+   border-top:black solid 1px; 
+   border-left: black solid 1px; 
+   border-right:  black solid 1px; 
+}
+
+.row3elementEnter{
+    border-bottom: 1px solid #000;
+
+  }
+
+.row4element{
+    padding: 0.45rem 0.92rem 0.45rem 0.92rem;
+    margin: 0.3rem;
+    border: black solid 1px;
+}
+
+
+.enter, .tab{
+    padding: 0 0.6rem 0 0.5rem;
+}
