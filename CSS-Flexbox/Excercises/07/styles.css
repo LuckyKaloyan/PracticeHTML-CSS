@@ -1,0 +1,99 @@
+/* Resetting default styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting base font and spacing */
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+p, ul, ol {
+    margin-bottom: 1.5em;
+}
+
+body {
+    padding: 2em;
+}
+
+/* Styles for the tree structure */
+.tree {
+    --border-size: 4px;
+    --border-color: #DDD;
+    --spacing-line-vertical: 0.2em;
+}
+
+.tree li, .tree summary {
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.tree li {
+    padding: var(--spacing-line-vertical) 0;
+}
+
+.tree ul {
+    padding-left: 0;
+}
+
+.tree ul li {
+    border-left: var(--border-size) solid var(--border-color);
+    margin-left: 0.25em;
+}
+
+.tree ul li:last-child {
+    border-color: transparent;
+}
+
+.tree ul li:before {
+    content: "";
+    display: block;
+    width: 1.4em;
+    height: 1.1em;
+    border: solid var(--border-color);
+    border-width: 0 0 var(--border-size) var(--border-size);
+    margin-left: calc(var(--border-size) * -0.91);
+}
+
+.tree ul li:last-child:before {
+    border-bottom-left-radius: 0.5em;
+}
+
+.tree summary {
+    cursor: pointer;
+}
+
+.tree summary:focus-visible {
+    outline: 1px dotted #000;
+}
+
+.tree summary::before {
+    content: "+";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    background: #ddd;
+    margin-right: 0.4em;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: -0.3em;
+    background-color: rgb(38, 129, 38);
+    color: #fff;
+}
+
+.tree details {
+    flex: 1;
+}
+
+.tree details[open] > summary::before {
+    content: "-";
+}
