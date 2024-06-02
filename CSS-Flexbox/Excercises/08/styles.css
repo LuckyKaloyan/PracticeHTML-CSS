@@ -12,7 +12,7 @@ html{
     padding: 8px;
     display: flex;
     flex-direction: column;
-    width: 752px;
+    width: 770px;
     height: 291.2px;
     background-color: grey;
     border: 1px solid darkgray;
@@ -28,6 +28,14 @@ html{
     width: 100%;
 }
 
+.row1, .row2{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 100%;
+}
+
 .row1element {
     padding: 4.8px 12.8px 4.8px 12.8px;
     margin: 4.8px;
@@ -36,20 +44,7 @@ html{
     border-radius: 7%;
 }
 
-.emptybox {
-    border: 1px solid darkgray;
-    border-bottom: 3px solid darkgray;
-    border-top: lightgrey 1px solid;
-    border-bottom-left-radius: 7%;
-    border-bottom-right-radius: 7%;
-    width: 52.8px;
-    height: 49.6px;
-    margin-bottom: 32px;
-    position: absolute;
-    left: 747.2px;
-    bottom: 243.2px;
-    color: lightgrey;
-}
+
 
 .row2element {
     padding: 7.2px 14.72px 7.2px 14.72px;
@@ -88,7 +83,23 @@ html{
     border-radius: 7%;
     border-bottom-left-radius: 7%;
     border-bottom-right-radius: 0%;
-
+    position: relative;
+}
+.enter::after{
+    content: "empty";
+    border: 1px solid darkgray;
+    border-bottom: 3px solid darkgray;
+    border-top: lightgrey 1px solid;
+    border-bottom-left-radius: 7%;
+    border-bottom-right-radius: 7%;
+    border-right: 1px solid darkgray;
+    background-color: lightgrey;
+    width: 60.8px;
+    height: 45.6px;
+    color: lightgrey;
+    position: absolute;
+    right:  -1px;
+    top: 100%;
 }
 
 .row4element {

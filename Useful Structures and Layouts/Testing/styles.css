@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 10em;
+}
+p::before{
+    content: "Alo da?";
+    color: red;
+}
+p::after{
+    content: "Alo da?";
+    color: green;
+}
