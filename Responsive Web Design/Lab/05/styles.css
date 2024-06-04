@@ -39,10 +39,10 @@
     }
 }
 
-@media (min-width: 800px) {
+@media (hover: none) {
     body::before {
         display: block;
-        content: 'The viewport width is larger than 800px';
+        content: 'The device does NOT support hover';
         background-color: #336699;
         padding: 1em;
         color: white;
@@ -51,10 +51,10 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (hover: hover) {
     body::before {
         display: block;
-        content: 'The viewport width is smaller than 800px';
+        content: 'The device does support hover';
         background-color: #336699;
         padding: 1em;
         color: white;
@@ -63,14 +63,3 @@
     }
 }
 
-@media (width: 800px) {
-    body::before {
-        display: block;
-        content: 'The viewport width is exactly 800px';
-        background-color: #336699;
-        padding: 1em;
-        color: white;
-        border-radius: 0.5em;
-        margin-bottom: 2em;
-    }
-}
