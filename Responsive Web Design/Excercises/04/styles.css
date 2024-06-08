@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+    padding: 2em;
+}
+
+div {
+    width: 95%;
+    height: auto;
+    margin: 1em;
+    border: 1px solid grey;
+    border-radius: 0.5em;
+    overflow: hidden;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    position: relative;
+}
+
+table {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border-top: 1px solid grey;
+    text-align: left;
+}
+
+table th,
+table td {
+    padding: 0.5em 1em;
+}
+
+table thead th,
+table thead td {
+    background: lightgrey;
+    color: black;
+}
+
+.table-one::before{
+    content: "Table Title";
+    display: block;
+    background-color: white;
+    padding: 1em;
+}
+
