@@ -1,0 +1,68 @@
+html{
+    padding: 2em;
+    background-color: lightgrey;
+}
+body{
+    padding: 1em 1em 0em 1em;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+header {
+    display: block;
+    background-color: white;
+    text-align: center;
+    width: 94%;
+    padding: 1em;
+    margin: 0 auto; 
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+h3{
+    margin: 0;
+    padding: 0;
+}
+.line{
+    display: flex;
+    flex-direction: row;
+}
+.leftborder, .rightborder{
+    width: 48%;
+ 
+}
+.right{
+    margin-left:4em;
+    text-align: left;
+    background: white;
+    padding: 1em;
+}
+.left{
+    text-align: right;
+    margin-right:4em;
+    background: white;
+    padding: 1em;
+}
+.empty{
+    padding: 1em;
+    width: 48%;
+    background: lightgray;
+}
+.rightborder{
+   
+    border-left: solid 1px black;
+
+}
+.leftborder{
+    margin-left: 2em;
+    border-right: solid 1px black;
+
+}
+.schwepess{
+    padding-bottom: 1em;
+}
+.schwepess2{
+    padding-top: 1em;
+}
+
