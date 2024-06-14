@@ -35,10 +35,12 @@ html{
 
 
 button{
-    padding: 0.65em 3em 0.74em 3em;
+    padding: 0.4em 4em 0.4em 4em;
     color: white;
     background: orange;
     border: white 1px solid;
+  position: relative;
+  top: 0.5em;
 }
 input{
     padding: 0.6em 3em 0.6em 1em;
@@ -131,7 +133,7 @@ input{
         background: orange;
         padding: 1em;
         margin: 0.4em;
-    border: 0;
+        border: 0;
         border: 0.1px solid darkorange;
     }
 }
