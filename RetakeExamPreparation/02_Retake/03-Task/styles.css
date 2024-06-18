@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif');
+*{
+    font-family: 'PT Sans', PT Sans, 'PT Serif', PT Serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+    background: red;
+    color: white;
+}
+i{
+    color: white;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    list-style: none;
+}
+li > a{
+    margin-top: 3vh;
+    text-decoration: none;
+    font-style: none;
+    color: white;
+    display: flex;
+    margin-right: 5vh;
+}
+.cover{
+    background: url('fitness-main.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 65vh;
+    color: white;
+    margin-top: -2vh;
+ 
+}
+.centerbox{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.centerbox > p {
+    width: 20vw;
+}
+button{
+    padding: 0.4vw;
+    background-color: red;
+    color: white;
+    font-size: 1em;
+    border-radius: 0.3vw;
+}
+ h1 {
+    line-height: 2;
+    letter-spacing: 0.5vw;
+    transform: scaleY(1.5);
+}
+.welcomePart{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.welcomePart p{
+    width: 12vw;
+    text-align: center;
+}
+.welcomePart div > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.threeColums{
+    display: flex;
+    justify-content: space-between;
+}
+.threeColums > div {
+    width: 18vw;
+    margin: 0vw 2vw 0vw 2vw;
+}
+.threeColums > div > img{
+    width: 5vw;
+    height: auto;
+
+}
+.redline{
+    width: 3vw;
+    border-top: darkred solid 5px;
+    margin-bottom: 3vh;
+}
+.coachesPart{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+}
+footer{
+    padding: 1.3vh;
+    text-align: center;
+    background: red;
+    color: black;
+}
+
+.coachesPart{
+    background-color: lightgray;
+}
+.coachesPart p{
+    width: 10vw;
+    padding-bottom: 4vh;
+}
+.coaches > div > img{
+    width: 13vw;
+    height: auto;
+
+}
+.coaches > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h5{
+    padding: 0;
+    margin: 0;
+    color: red;
+}
