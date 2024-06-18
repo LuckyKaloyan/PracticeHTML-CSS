@@ -9,11 +9,16 @@
         margin: 0;
     }
     .home-navbar{
-        border-bottom: 5x solid white;
+        border-bottom: 10x solid white;
     }
 
     .home-container {
         padding-top: 50px;
+        margin-top: -50px;
+    }
+    .home-navbar1{
+        border-bottom: 10px solid white;
+        margin-bottom: 10px;
     }
 
     .home-container03 {
@@ -83,4 +88,40 @@
     .home-left4{
         width: 100vw;
     }
+
+    .home-navbar{
+        margin: 0;
+        position: relative;
+    }
+
+
+
+    .home-footer {
+        flex: 0 0 auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-color: #e5e5e5ff;
+        border-width: 1px;
+        flex-direction: column;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+        padding-left: 20px;
+      }
+      .home-footer1 {
+        width: 100%;
+        display: flex;
+        max-width: 1328px;
+        align-items: flex-start;
+        padding-top: 96px;
+        flex-direction: column-reverse;
+        padding-bottom: 96px;
+        justify-content: space-between;
+        padding-left: 20px;
+      }
+      .home-links-container {
+        flex-direction: column;
+        padding-left: 20px;
+      }
 }
